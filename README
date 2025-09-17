@@ -1,0 +1,73 @@
+# TaskyAI - AI-Powered To-Do List & Project Management App
+
+TaskyAI is a modern, AI-powered to-do list and project management application designed to help you organize your tasks and projects with ease. It features a sleek, dark-themed interface and leverages Google's Generative AI to automatically generate task lists from simple prompts, streamlining your project planning process.
+
+## ✨ Features
+
+  * **📝 Task & Project Management**: Create, edit, delete, and organize tasks and projects effortlessly.
+  * **🤖 AI-Powered Task Generation**: Automatically generate a list of tasks for your projects by providing a simple prompt.
+  * **🗂️ Task Organization**: Categorize tasks into "Inbox," "Today," "Upcoming," and "Completed" views.
+  * **🎨 Customizable Projects**: Assign custom names and colors to your projects for easy identification.
+  * **🔍 Project Search**: Quickly find any project with the built-in search functionality.
+  * **🔐 User Authentication**: Secure user authentication and management powered by Clerk.
+  * **🌙 Dark Mode**: A sleek and modern dark-themed UI for a comfortable user experience.
+
+## 🛠️ Tech Stack
+
+  * **Frontend**: React, TypeScript, Vite
+  * **Styling**: Tailwind CSS, `tailwindcss-animate`
+  * **UI Components**: Shadcn UI
+  * **Routing**: React Router
+  * **Backend as a Service (BaaS)**: Appwrite
+  * **Authentication**: Clerk
+  * **AI**: Google Generative AI (Gemini)
+
+## 🏁 Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed on your machine.
+
+  * [Node.js](https://nodejs.org/) (v14 or higher)
+  * [npm](https://www.npmjs.com/)
+
+### Installation
+
+1.  **Clone the repo**
+    ```sh
+    git clone https://github.com/ashrus03/taskyai.git
+    ```
+2.  **Navigate to the project directory**
+    ```sh
+    cd taskyai
+    ```
+3.  **Install NPM packages**
+    ```sh
+    npm install
+    ```
+
+### Environment Variables
+
+You'll need to create a `.env` file in the root of your project and add the following environment variables. You can get these keys from their respective platforms (Clerk, Appwrite, and Google AI).
+
+```env
+VITE_CLERK_PUBLISHABLE_KEY=your-clerk-publishable-key
+VITE_CLERK_SIGN_IN_FORCE_REDIRECT_URL=/auth-sync
+VITE_CLERK_SIGN_UP_FORCE_REDIRECT_URL=/auth-sync
+VITE_APPWRITE_PROJECT_ID=your-appwrite-project-id
+VITE_APPWRITE_DATABASE_ID=your-appwrite-database-id
+VITE_GEMINI_API_KEY=your-gemini-api-key
+```
+
+### Running the App
+
+To start the development server, run the following command:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`.
+
